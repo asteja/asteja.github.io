@@ -1,0 +1,177 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #f4f3ef;
+  --ink: #1a1d1f;
+  --muted: #5b6065;
+  --accent: #0f766e;
+  --accent-2: #e76f51;
+  --card: #ffffff;
+  --shadow: 0 20px 60px rgba(26, 29, 31, 0.12);
+}
+
+body {
+  background: radial-gradient(circle at 20% 10%, #f6e7d8 0%, transparent 48%),
+    radial-gradient(circle at 80% 0%, #d9f2ee 0%, transparent 40%),
+    var(--bg);
+  color: var(--ink);
+  font-family: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Fraunces", "Georgia", serif;
+  letter-spacing: -0.02em;
+}
+
+.site-title, .site-title:visited {
+  font-family: "Fraunces", "Georgia", serif;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.page-content {
+  padding: 2.5rem 0 4rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.5rem;
+  background: var(--card);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+}
+
+.hero .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.12);
+  color: var(--accent);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 3vw, 3.2rem);
+  margin: 0.6rem 0 0.8rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.hero .actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.4rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+  border-color: rgba(26, 29, 31, 0.2);
+  color: var(--ink);
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1.6rem;
+  box-shadow: 0 12px 30px rgba(26, 29, 31, 0.08);
+  border: 1px solid rgba(26, 29, 31, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.featured {
+  padding: 1.4rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(15, 118, 110, 0.1), rgba(231, 111, 81, 0.08));
+}
+
+.featured strong {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.footer-cta {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 20px;
+  background: #111827;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-cta a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
