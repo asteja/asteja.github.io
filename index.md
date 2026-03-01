@@ -16,14 +16,12 @@ title: Home
       <a class="button-secondary" href="/about/">About me</a>
     </div>
   </div>
-  <div>
-    <div class="card">
-      <h3>Now building</h3>
-      <p>Transportation and scheduling tools that reduce friction for university communities.</p>
-    </div>
-    <div class="card" style="margin-top:1rem;">
-      <h3>Focus areas</h3>
-      <p>iOS development, web platforms, and lightweight full-stack systems.</p>
+  <div class="hero-visual">
+    <div class="stat">3+ <span>student-facing apps shipped</span></div>
+    <div class="stat">5+ <span>campus tools in progress</span></div>
+    <div class="mini-card">
+      <strong>Currently exploring</strong>
+      <p>Realtime updates, ride coordination, and clean onboarding flows.</p>
     </div>
   </div>
 </section>
