@@ -1,0 +1,32 @@
+# Site settings
+title: Saiteja Alle
+email: your-email@example.com
+description: >-
+  Software Developer | iOS & Web Development
+  Building innovative solutions for students and communities
+baseurl: ""
+url: "https://asteja.github.io"
+github_username: asteja
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Social links
+twitter_username: your_twitter_username
+linkedin_username: your_linkedin_username
+
+# Navigation
+header_pages:
+  - about.md
+  - projects.md
+  - blog.md
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
